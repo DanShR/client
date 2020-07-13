@@ -6,7 +6,7 @@ import axios from 'axios';
 function App() {
   const onClick = () => {
     console.log(process.env.REACT_APP_API_URL);
-    axios.get(process.env.REACT_APP_API_URL + '/api')
+    axios.get(process.env.REACT_APP_API_URL + '/api_api')
       .then( (resp) => console.log(resp.data)) 
       .catch( (error) => console.log(error));
   };
