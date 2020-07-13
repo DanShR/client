@@ -7,7 +7,7 @@ function App() {
   
 
   const onClick = () => {
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 20000; i++) {
       axios.get('/api')
       .then( (resp) => console.log(resp.data)) 
       .catch( (error) => console.log(error));
