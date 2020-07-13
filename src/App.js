@@ -10,7 +10,7 @@ const URL = process.env.NODE_ENV === 'development' ? 'http://127.0.0.1:3001' : '
     console.log(process.env.REACT_APP_API_URL);
     console.log(process.env.NODE_ENV);
     
-    axios.get(URL + '/api')
+    axios.get('/api')
       .then( (resp) => console.log(resp.data)) 
       .catch( (error) => console.log(error));
   };
